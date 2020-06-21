@@ -1,15 +1,15 @@
 {
-  "hosting": {
-    "site":"myaurapp",
-    "public": "dist",
-    "rewrites": [ {
-        "source": "**",
-        "destination": "/index.html"
-    } ],
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+    "hosting": {
+        "site": "dev-gdg-indore",
+        "public": "dist",
+        "rewrites": [{
+            "source": "**",
+            "destination": "/index.html"
+        }],
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ]
+    }
 }
