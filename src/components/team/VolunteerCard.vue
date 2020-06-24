@@ -4,7 +4,7 @@
       width="700"
     >
       <template v-slot:activator="{ on }">
-          <div v-on="on" style="cursor: pointer;" class="text-center py-5 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
+          <!-- <div v-on="on" style="cursor: pointer;" class="text-center py-5 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
               <v-avatar size="100">
                   <img 
                     :src="getImgUrl(data.image, 'profile.jpg')"
@@ -14,7 +14,25 @@
                 <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.name}}</p>
                 <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.designation}}</p>
                 <socialMediaDetails :data="data.socialLinks"/>
-          </div>
+          </div> -->
+          <v-list v-on="on" three-line subheader class="py-0" :class="$vuetify.theme.dark == true?'black':'white'">
+        <v-list-item
+        class=""
+        @click="goToTeam(data.id)"
+        >
+            <v-list-item-avatar>
+                <img :src="getImgUrl(data.image, 'profile.jpg')">
+            </v-list-item-avatar>
+
+            <v-list-item-content>
+                <v-list-item-title class="google-font mb-0" v-text="data.name"></v-list-item-title>
+                <v-list-item-subtitle class="google-font mb-0 mt-0" >{{ data.designation }}</v-list-item-subtitle>
+                <socialMediaDetails class="pl-0 ml-0" :data="data.socialLinks"/>
+            </v-list-item-content>
+        </v-list-item>
+
+        <!-- <v-divider inset></v-divider> -->
+    </v-list>
           
       </template>
 
