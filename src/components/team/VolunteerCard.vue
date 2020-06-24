@@ -84,6 +84,9 @@ import socialMediaDetails from '@/components/common/SocialInfo'
      
     },
     methods:{
+      goToTeam(id){
+        this.$router.push("/team/" + id);
+      },
     },
     filters:{
         summery: (val,num)=>{

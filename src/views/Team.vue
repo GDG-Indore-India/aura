@@ -42,7 +42,7 @@
              </v-row>
         </v-container>
 
-        <v-container fluid class="pa-0" v-if="OrganizingTeam.length>0">
+        <v-container fluid class="pa-0" v-if="Volunteers.length>0">
              <v-row justify="center" align="center" class="py-3">
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 ">
                   <Volunteers :data="Volunteers"/>
