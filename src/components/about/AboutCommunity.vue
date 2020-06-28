@@ -3,8 +3,8 @@
         <v-row class="py-0 my-0" align="center">
             <v-col md="4" sm="12" cols="12" class="py-0 my-0">
                 <v-img
-                    :src="require('@/assets/img/dontremove/about.png')"
-                    :lazy-src="require('@/assets/img/dontremove/about.png')"
+                    :src="require('@/assets/img/dontremove/about-new.png')"
+                    :lazy-src="require('@/assets/img/dontremove/about-new.png')"
                     class=" mb-3"
                     width="100%"
                 >
@@ -21,9 +21,11 @@
             </v-col>
             <v-col md="8" sm="12" cols="12" class="py-0 my-0">
                 <!-- {{data}} -->
-                <p class="google-font mt-0" style="font-size:110%">{{data.longDescription}}</p>
+                <p class="google-font mt-0 text-grey" style="font-size:105%">{{data.shortDescription}}</p>
+                <p class="google-font mt-0 text-grey" style="font-size:105%">{{data.longDescription}}</p>
                 <br>
-                <v-btn v-if="checkExistance(data.becomemember, 0)" :href="data.becomemember" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
+
+                <v-btn v-if="checkExistance(data.becomemember, 0)" :href="data.becomemember" target="_blank" class="ma-0 mr-5 google-font elevation-1 bg-primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
 
                 &nbsp;
 

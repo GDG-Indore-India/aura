@@ -1,10 +1,10 @@
 <template>
   <v-container fluid class="py-0">
     <v-row align="center" class="fill-height">
-      <v-col md="3" sm="6" cols="12" class>
+      <v-col md="4" sm="6" cols="12" class>
         <v-img
-          :src="require('@/assets/img/svg/home.svg')"
-          :lazy-src="require('@/assets/img/svg/home.svg')"
+          :src="require('@/assets/img/svg/home-new.jpg')"
+          :lazy-src="require('@/assets/img/svg/home-new.jpg')"
           width="100%"
         >
           <template v-slot:placeholder>
@@ -14,7 +14,7 @@
           </template>
         </v-img>
       </v-col>
-      <v-col md="9" sm="6" cols="12" class="px-0">
+      <v-col md="8" sm="6" cols="12" class="px-0">
         <p
           class="google-font mb-1"
           :class="$vuetify.theme.dark == true?'dark-font-color':'light-font-color'"
@@ -25,7 +25,7 @@
             <span style="color: #1a73e8;">together</span>.
           </b>
         </p>
-        <p class="google-font mt-0 mb-0" style="font-size:150%">{{config.generalConfig.name}}</p>
+        <!-- <p class="google-font mt-0 mb-0" style="font-size:150%">{{config.generalConfig.name}}</p> -->
         <p class="google-font" style="font-size:100%">{{config.generalConfig.shortDescription}}</p>
         <p class="google-font" style="font-size:100%;color:#9e9e9e">
           <span v-for="(item,i) in config.generalConfig.hashtags" :key="i">
@@ -33,7 +33,7 @@
               :href="'https://twitter.com/hashtag/'+item"
               target="_blank"
               small
-              class="mr-1"
+              class="mr-1 font-size-14"
             >#{{item}}</v-chip>
             <!-- &nbsp; -->
           </span>
@@ -43,7 +43,7 @@
           v-if="checkExistance(config.generalConfig.becomemember,0)"
           :href="config.generalConfig.becomemember"
           target="_blank"
-          class="ma-0 google-font elevation-1 primary mr-2"
+          class="ma-0 mr-5 google-font elevation-1 bg-primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Become a Member</v-btn>
         <v-btn

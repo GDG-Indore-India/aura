@@ -31,7 +31,7 @@
                 style="font-size:95%"
               >Get updated with the latest news and announcements</p>
             </v-col>
-            <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
+            <v-col md="3" lg="3" sm="12" cols="6" class="text-center pa-2">
               <v-icon large style="font-size:300%">mdi-code-tags</v-icon>
               <p class="google-font mt-2" style="font-size:130%">Codelabs</p>
               <p
@@ -39,7 +39,7 @@
                 style="font-size:95%"
               >Get hands-on experience and guidance from the community members</p>
             </v-col>
-            <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
+            <v-col md="3" lg="3" sm="12" cols="6" class="text-center pa-2">
               <v-icon large style="font-size:300%">mdi-school</v-icon>
               <p class="google-font mt-2" style="font-size:130%">Campus Roadshows</p>
               <p
@@ -47,7 +47,7 @@
                 style="font-size:95%"
               >Share knowledge in different Companies, colleges and universities</p>
             </v-col>
-            <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
+            <v-col md="3" lg="3" sm="12" cols="6" class="text-center pa-2">
               <v-icon large style="font-size:300%">mdi-chart-bubble</v-icon>
               <p class="google-font mt-2" style="font-size:130%">Live Viewing Parties</p>
               <p

@@ -45,8 +45,78 @@
       max-width: 21%;
       margin: 18px;
   }
+
+  .text-grey {
+      color: #7e7e7e;
+  }
+
+  .font-size-14 {
+      font-size:14px !important;
+  }
+
+  .bg-primary {
+    background-color: rgb(26, 115, 232) !important;
+    border-color: rgb(26, 115, 232) !important;
+}
+
+.chip-wrapper {
+    border-radius: 12px !important;
+    font-size: 14px;
+    padding: 13px 16px;
+    height: 16px !important;
+}
+
+.text-primary {
+    color:rgb(26, 115, 232);
+}
+
+.heading-text {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.theme--light.v-btn, .primaryText {
+    color: rgb(26, 115, 232);
+}
+
+.theme--light.v-btn--active:hover::before, .theme--light.v-btn--active::before {
+    opacity: 0.11;
+}
+
+.footer-link-btn {
+    background: rgba(26, 115, 232, 0.11);
+}
+
+.team-heading {
+    padding:0 16px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .team-card {
+        flex: 0 0 43%;
+        max-width: 43%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .team-card {
+        flex: 0 0 85%;
+        max-width: 85%;
+        margin: 20px auto;
+    }
+
+    .v-chip.v-size--small, .chip-wrapper {
+        margin-top:10px;
+    }
+}
+
   /* .lightModeCard{
     background-color:#ffff;
     border:1px solid #e0e0e0;
     border-radius:5px
 } */
+
+
+

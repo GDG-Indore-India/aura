@@ -110,7 +110,7 @@
                 v-for="(item,i) in config.footerConfig['Footer End Session Link']" 
                 :key="i"
                 :href="item.link" target="_blank" 
-                class="ml-0 google-font hidden-sm-and-down"
+                class="ml-0 mr-5 google-font hidden-sm-and-down"
                 style="text-transform: capitalize;font-size:110%" 
                 text
                 aria-label="Footer Bottom Button"
