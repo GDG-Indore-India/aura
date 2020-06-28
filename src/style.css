@@ -66,6 +66,10 @@
     height: 16px !important;
 }
 
+.chip-wrapper.v-chip--label {
+    border-radius: 12px !important;
+}
+
 .text-primary {
     color:rgb(26, 115, 232);
 }
